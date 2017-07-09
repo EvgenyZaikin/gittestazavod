@@ -1,0 +1,50 @@
+/* Настройки стилей для общих элементов */
+*{margin:0; padding:0;}
+header{overflow:auto;}
+h1{float:left;}
+input{padding:5px 0 5px 5px;}
+ul{list-style-type:none; float:left; margin-right:25px;}
+label{margin-left:10px;}
+h3{margin-bottom:10px;}
+
+/* Главная обёртка */
+#main_wrap{border:1px solid black; width:1205px; height:990px; padding:25px 0 0 10px;}
+
+/* шапка в секции "реестр сотрудников" */
+header p{float:right; padding-top:15px;}
+header p a{text-decoration:none; color:blue; font-style:italic;}
+
+/* секция поиска сотрудников */
+#search{border:1px solid black; padding:25px 0 25px 10px; overflow:auto; margin:25px 0;}
+#input_search{width:200px;}
+#search_by_sex_and_age{margin-top:25px; overflow:auto;}
+#sex input[type="checkbox"]{margin:7px 0;}
+#button_search{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
+
+/* секция вывода сотрудников */
+#personal table{border-spacing:0;}
+#personal table tr td{border:1px solid black; padding:5px 5px 5px 5px;}
+#tr_values td p{font-weight:bold;}
+.td_id{width:100px;}
+.td_photo{width:100px;}
+.td_fio{width:300px;}
+.td_age{width:100px;}
+.td_sex{width:100px;}
+.td_action{width:200px;}
+.small_photo{width:25px; height:25px; cursor:pointer; transition:all 1s ease; position:absolute; margin-top:-12px;}
+.small_photo:hover{width:250px; height:250px; position:absolute; z-index:3;}
+
+/* секция создания/редактирования сотрудника */
+#create_personal{border:1px solid black; padding:25px 0 25px 10px; overflow:auto; margin:25px 0;}
+.identific{text-align:right;}
+.identific_input{margin-left:10px;}
+#button_safe{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
+#button_cancel{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
+.male{color:blue;}
+.female{color:pink;}
+
+/* Пагинация */
+.pag_show{display:table-row;}
+.pag_hide{display:none;}
+.pag_link{display:inline-block; padding:5px 10px; border:1px solid black; cursor:pointer; margin-top:25px;}
+.pag_link:hover{background-color:lightgrey;}
