@@ -12,8 +12,10 @@
 			
 			$age_personal = getdate()['year'] - array_shift(explode('-', $birthday));
 			
-			$where_put_file = "../photo/".$_FILES['photo_personal']['name'];
-			move_uploaded_file($_FILES['photo_personal']['tmp_name'], $where_put_file);
+			if($_FILES['photo_personal']['size'] < 25000){
+				$where_put_file = "../photo/".$_FILES['photo_personal']['name'];
+				move_uploaded_file($_FILES['photo_personal']['tmp_name'], $where_put_file);
+			}	
 				
 			mysqli_query($link, "INSERT INTO personal VALUES(NULL, '$name_photo', '$name', '$surname', '$patronymic', 
 												 $age_personal, '$sex', '$birthday')");
