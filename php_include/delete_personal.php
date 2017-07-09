@@ -4,5 +4,4 @@
 		$id = $_POST['delete_id'];
 		mysqli_query($link, "DELETE FROM personal WHERE id = '$id'");
 	}
-	//header('Location: /index.php');
 ?>

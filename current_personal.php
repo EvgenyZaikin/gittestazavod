@@ -27,24 +27,24 @@
 					<table>
 						<tr>
 							<td><p class="identific">Фамилия:</p></td>
-							<td><input class="identific_input" type="text" name="surname_personal" value="<?php echo $row['name']; ?>" /><td>
+							<td><input class="identific_input" type="text" name="surname_personal" value="<?php echo $row['name']; ?>" required/><td>
 						</tr>
 						<tr>
 							<td><p class="identific">Имя:</p></td>
-							<td><input class="identific_input" type="text" name="name_personal" value="<?php echo $row['surname']; ?>" /><td>
+							<td><input class="identific_input" type="text" name="name_personal" value="<?php echo $row['surname']; ?>" required/><td>
 						</tr>
 						<tr>
 							<td><p class="identific">Отчество:</p></td>
-							<td><input class="identific_input" type="text" name="patronymic_personal" value="<?php echo $row['patronymic']; ?>" /><td>
+							<td><input class="identific_input" type="text" name="patronymic_personal" value="<?php echo $row['patronymic']; ?>" required/><td>
 						</tr>
 						<tr>
 							<td><p class="identific">Дата рождения:</p></td>
-							<td><input class="identific_input" type="date" name="birthday_personal" value="<?php echo $row['birthday']; ?>" /><td>
+							<td><input class="identific_input" type="date" name="birthday_personal" value="<?php echo $row['birthday']; ?>" required/><td>
 						</tr>
 						<tr>
 							<td><p class="identific">Пол:</p></td>
 							<td>
-								<select class="identific_input" name="sex_personal">
+								<select class="identific_input" name="sex_personal" required>
 									<?php 
 										if($row['sex'] == 'Женский') $sex = 'selected';
 										else $sex = '';

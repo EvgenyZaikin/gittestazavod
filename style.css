@@ -8,7 +8,7 @@ label{margin-left:10px;}
 h3{margin-bottom:10px;}
 
 /* Главная обёртка */
-#main_wrap{border:1px solid black; width:1205px; height:990px; padding:25px 0 0 10px;}
+#main_wrap{width:1205px; height:990px; padding:25px 0 0 10px;}
 
 /* шапка в секции "реестр сотрудников" */
 header p{float:right; padding-top:15px;}
