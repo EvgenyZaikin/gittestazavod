@@ -12,7 +12,7 @@
 			
 			$age_personal = getdate()['year'] - array_shift(explode('-', $birthday));
 			
-			if($_FILES['photo_personal']['size'] < 200000){
+			if($_FILES['photo_personal']['size'] < 1638400){
 				$where_put_file = "../photo/".$_FILES['photo_personal']['name'];
 				move_uploaded_file($_FILES['photo_personal']['tmp_name'], $where_put_file);
 			}	
