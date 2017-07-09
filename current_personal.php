@@ -55,7 +55,7 @@
 							<td>
 						</tr>
 						<tr>
-							<td><input name="MAX_FILE_SIZE" value="25000" type="hidden"/></td> 
+							<td><input name="MAX_FILE_SIZE" value="200000" type="hidden"/></td> 
 							<td><p class="identific">Фото:</p></td>
 							<td>
 								<!--<input type="hidden" name="MAX_FILE_SIZE" value="30000" />-->
