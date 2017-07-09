@@ -33,12 +33,13 @@ header p a{text-decoration:none; color:blue; font-style:italic;}
 .td_action{width:200px;}
 .small_photo{width:25px; height:25px; cursor:pointer; transition:all 1s ease; position:absolute; margin-top:-12px;}
 .small_photo:hover{width:250px; height:250px; position:absolute; z-index:3;}
+.delete_personal{cursor:pointer;}
 
 /* секци€ создани€/редактировани€ сотрудника */
 #create_personal{border:1px solid black; padding:25px 0 25px 10px; overflow:auto; margin:25px 0;}
 .identific{text-align:right;}
 .identific_input{margin-left:10px;}
-#button_safe{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
+#button_safe, #button_edit{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
 #button_cancel{margin-top:25px; padding:10px 25px; border-radius:5px; border:1px solid black; cursor:pointer; width:auto; display:inline-block;}
 .male{color:blue;}
 .female{color:pink;}

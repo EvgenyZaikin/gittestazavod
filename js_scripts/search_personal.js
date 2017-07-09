@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function(){
 		var from_age_search = document.getElementById('input_from_age').value;
 		var before_age_search = document.getElementById('input_before_age').value;
 		var table_personal = document.getElementById('personal').getElementsByTagName('table')[0];
+		var pagination = document.getElementById('pagination');
 		
+		pagination.innerHTML = '';
 		table_personal.innerHTML = '<tr id="tr_values">' +
 										'<td class="td_id"><p>№ id</p></td>' +
 										'<td class="td_photo"><p>Фото</p></td>' +
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
 						});
 					}
 					
+					/* Удаление сотрудника */
 					var delete_links = document.getElementsByClassName('delete_personal');
 					for(var k = 0; k < delete_links.length; k++){
 						delete_links[k].addEventListener("click", function(){
